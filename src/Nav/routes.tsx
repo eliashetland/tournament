@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../Layout/Layout";
 import { Home, User } from "lucide-react";
+import { UserRegistration } from "../UserRegistration/UserRegistration";
 
 export interface IRouteHandle {
   title: string;
@@ -21,7 +22,7 @@ export const router = createBrowserRouter(
         },
         {
           path: "/register",
-          element: <div>Register Page</div>,
+          element: <UserRegistration />,
           handle: { title: "Register", icon: <User /> } as IRouteHandle,
         },
       ],

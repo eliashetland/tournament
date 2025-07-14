@@ -1,0 +1,49 @@
+.registrationForm {
+  display: flex;
+  gap: 1rem;
+}
+
+.registrationForm > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.registrationForm label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.registrationForm input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.registrationForm button {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registrationForm button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 600px) {
+  .registrationForm {
+    flex-direction: column;
+  }
+
+  .firstName,
+  .lastName {
+    width: 100%;
+  }
+}

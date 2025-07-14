@@ -41,8 +41,10 @@
 
 .main {
   grid-area: main;
+  background-color: #f1f3f3;
   padding: 1rem;
   overflow-y: auto;
+  scrollbar-gutter: stable;
 }
 
 .nav {
