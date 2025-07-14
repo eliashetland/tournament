@@ -9,6 +9,7 @@ export const Nav = () => {
     <ul className={styles.navList}>
       {mainRoutes.map((route) => {
         const handle: IRouteHandle = route.handle;
+        if (!handle) return null;
 
         return (
           <li key={route.path} title={handle.title} className={styles.navItem}>

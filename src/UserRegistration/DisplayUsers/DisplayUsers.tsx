@@ -1,4 +1,4 @@
-import type { IUser } from "../useUser";
+import type { IUser } from "../models/IUser";
 import styles from "./DisplayUsers.module.css";
 
 interface IDisplayUsersProps {

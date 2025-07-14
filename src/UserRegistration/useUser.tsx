@@ -1,19 +1,6 @@
 import { useState } from "react";
-
-export interface ITournamentPlayed {
-  name: string;
-  dateString: string;
-  position: number;
-  totalPlayers: number;
-}
-
-export interface IUser {
-  id: string;
-  firstName: string;
-  lastName: string;
-  ranking: number;
-  tournamentsPlayed: ITournamentPlayed[];
-}
+import type { ITournamentPlayed } from "../NewTournament/models/ITournamentPlayed";
+import type { IUser } from "./models/IUser";
 
 export function useUsers() {
   const [users, setUsers] = useState<IUser[]>(
