@@ -1,0 +1,80 @@
+.addTeam {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgb(215, 230, 230);
+
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.addTeam h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.teamMembers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.teamMembers select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.selectedMembers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.selectedMembers ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.selectedMembers li {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.removeMember {
+  padding: 0.5rem 0.7rem;
+
+  height: fit-content;
+  background: none;
+
+  color: red;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addTeamForm .addButton {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addTeamForm .addButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
